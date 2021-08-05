@@ -1,0 +1,430 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 15px;
+    line-height: 1.6;
+    color: #BEA67C;
+
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/*  Container */
+.container {
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Intro */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+    background: url("../images/intro.jpg") center no-repeat;
+    background-size: cover;
+}
+
+
+.intro_title {
+    font-size: 100px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 40px auto;
+    letter-spacing: 10px;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    padding-top: 40px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header--fixed {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    background: #000;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    transform: translate3d(0,0,0);
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo {
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin-left: 600px;
+}
+
+/* Nav */
+.nav {
+    font-size: 15px;
+    margin-right: 200px;
+}
+
+.nav_link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 50px;
+    position: relative;
+    text-transform: uppercase;
+
+    color: #868786;
+    text-decoration: none;
+
+    transition: color .2s linear;
+}
+
+.nav_link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: #ccc;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity .2s linear;
+}
+
+.nav_link:hover {
+    color: #fff;
+}
+
+.nav_link:hover:after {
+    opacity: 1;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 22px 84px;
+
+    border: 2px solid #868786;
+
+    font-size: 14px;
+    font-weight: 700;
+    color: #868786;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: background .2s linear, color .2s linear, border-color .2s linear;
+}
+
+.btn:hover {
+    background-color: #000;
+    color: #ffffff;
+    border-color: #000;
+}
+
+/* Mouse */
+
+.img {
+    max-width: 25px;
+    margin: 30px auto;
+
+}
+
+.img_text {
+    margin: 18px auto;
+    -webkit-transform: rotate(90deg);
+    letter-spacing: 3px;
+    color: #868786;
+    opacity: .5;
+}
+
+
+/* Section */
+
+.section {
+    padding: 80px 0;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+
+}
+
+/*
+.section_header {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto 40px;
+    text-align: left;
+}
+*/
+
+.section_furniture {
+    font-size: 48px;
+    color: #000;
+    text-transform: uppercase;
+    text-align: left;
+    width: 50%;
+    margin: auto;
+    max-width: 600px;
+}
+
+/*
+   .section_title1:after {
+       content: "";
+       display: block;
+       width: 150px;
+       height: 3px;
+       background-color: #BEA67C;
+   }
+
+*/
+
+.section_text {
+    text-transform: none;
+    font-size: 15px;
+    text-align: left;
+    color: #868786;
+    font-weight: normal;
+}
+
+
+.section_text:after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 5px;
+    background-color: #BEA67C;
+    margin-top: 8px;
+
+}
+
+
+.furniture {
+    display: flex;
+    justify-content: space-between;
+}
+
+.furniture_picture {
+    width: 50%;
+}
+
+.decor {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 80px;
+}
+
+.section_decor {
+    font-size: 48px;
+    color: #000;
+    text-transform: uppercase;
+    text-align: left;
+    width: 50%;
+    margin: 40px auto;
+    max-width: 600px;
+    order: 2;
+    -ms-flex-order: 2;
+}
+
+.decor_picture {
+    width: 50%;
+    order: 1;
+    -ms-flex-order: 1;
+
+}
+
+/* Title */
+.section_title {
+    font-size: 48px;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.section_title:after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 5px;
+    margin: 30px auto;
+
+    background-color: #BEA67C;
+}
+
+.section_text1 {
+    font-size: 15px;
+    color: #868786;
+    text-align: center;
+}
+
+
+/* Circle */
+.circle {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.circle_img {
+    width: 244px;
+    margin-top: 90px;
+
+}
+
+/*
+.empty_circle {
+    padding: 15px;
+    border-width: 1px;
+    border-color: rgb(225, 225, 225);
+    border-style: solid;
+    border-radius: 100%;
+    position: absolute;
+    display: block;
+
+}
+ */
+
+.empty_circle:after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 25px auto;
+
+    background-color: #BEA67C;
+}
+
+.circle_text {
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+    color: #000;
+    margin-bottom: 160px;
+}
+
+/* Intro 2 */
+
+.second_intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+    background: url("../images/intro3.jpg") center no-repeat;
+    background-size: cover;
+
+}
+
+
+.frame {
+    border: 2px solid #BEA67C;
+    padding: 200px;
+    margin: 0 auto;
+    max-width: 2200px;
+    max-height: 1000px;
+}
+
+.second_title {
+    text-align: left;
+
+    margin-left: 300px;
+    width: 30%;
+
+    font-size: 48px;
+}
+
+.title_text {
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 300px;
+    width: 30%;
+
+    font-size: 15px;
+    color: #868786;
+}
+
+.video {
+    display: inline-block;
+    vertical-align: top;
+    padding: 30px 100px;
+
+    border: 2px solid #868786;
+
+    font-weight: 700;
+    color: #868786;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: background .2s linear, color .2s linear, border-color .2s linear;
+
+    margin-left: 300px;
+    margin-top: 30px;
+}
+
+.video:hover {
+    background-color: #000;
+    color: #ffffff;
+    border-color: #000;
+}
+
+/* Under */
+
+.under {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+
+    background: url("../images/under.jpg") center no-repeat;
+    background-size: cover;
+
+}
+
+.under_logo {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
